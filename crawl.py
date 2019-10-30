@@ -10,8 +10,8 @@ from bs4 import BeautifulSoup
 from urllib.parse import quote
 from urllib.parse import unquote
 
-ZSXQ_ACCESS_TOKEN = '7364434F-6288-B1C8-9X23-611LB3575EF0' # 登录后Cookie中的Token
-GROUP_ID = '481818518558'                                  # 知识星球中的小组ID
+ZSXQ_ACCESS_TOKEN = '05FF1F9A-929B-9799-19A7-C87A575445C8' # 登录后Cookie中的Token
+GROUP_ID = '15285211242422'                                  # 知识星球中的小组ID
 PDF_FILE_NAME = '电子书.pdf'                               # 生成PDF文件的名字
 DOWLOAD_PICS = True                                        # 是否下载图片 True | False 下载会导致程序变慢
 DOWLOAD_COMMENTS = True                                    # 是否下载评论
@@ -46,10 +46,10 @@ def get_data(url):
     OVER_DATE_BREAK = False
 
     global htmls, num
-        
+
     headers = {
         'Cookie': 'zsxq_access_token=' + ZSXQ_ACCESS_TOKEN,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0'
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'
     }
     
     rsp = requests.get(url, headers=headers)
